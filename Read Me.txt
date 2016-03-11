@@ -1,0 +1,3 @@
+This is an example mod for Gnomoria, used for a modding guide I'm making.
+
+This mod "Creates a new workshop that turns wood planks into stone swords."
