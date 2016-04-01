@@ -52,6 +52,27 @@
           AllowedMaterial (optional): Default is all materials.  When this is added it restricts component to only items of these materials.  Supports an arbitrary number
   -->
   
+  <!--WoodForge-->
+  <Item>
+    <ID>WoodForge</ID> <!-- changed ID -->
+    <Name>WoodForge</Name> <!-- changed name -->
+    <Value>3</Value>
+    <SpriteID>
+      <SpriteID>SelectionFloor</SpriteID>
+    </SpriteID>
+    <Component>
+      <ItemID>Mold</ItemID>
+      <Quantity>1</Quantity>
+    </Component>
+    <Component>
+      <ItemID>Hearth</ItemID>
+      <Quantity>1</Quantity>
+    </Component>
+    <Component>
+      <ItemID>Bellows</ItemID>
+      <Quantity>1</Quantity>
+    </Component>
+  </Item>
   <!--SoilFloor-->
   <Item>
     <ID>SoilFloor</ID>
@@ -1812,27 +1833,6 @@
   <Item>
     <ID>Forge</ID>
     <Name>Forge</Name>
-    <Value>3</Value>
-    <SpriteID>
-      <SpriteID>SelectionFloor</SpriteID>
-    </SpriteID>
-    <Component>
-      <ItemID>Mold</ItemID>
-      <Quantity>1</Quantity>
-    </Component>
-    <Component>
-      <ItemID>Hearth</ItemID>
-      <Quantity>1</Quantity>
-    </Component>
-    <Component>
-      <ItemID>Bellows</ItemID>
-      <Quantity>1</Quantity>
-    </Component>
-  </Item>
-  <!--WoodForge-->
-  <Item>
-    <ID>WoodForge</ID> <!-- changed ID -->
-    <Name>WoodForge</Name> <!-- changed name -->
     <Value>3</Value>
     <SpriteID>
       <SpriteID>SelectionFloor</SpriteID>

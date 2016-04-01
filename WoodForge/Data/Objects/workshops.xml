@@ -45,6 +45,58 @@
         ConstructionID: ID of construction which creates this workshop
         ResearchID (optional): ID of research group this workshop progresses
   -->
+  <!--WoodForge-->
+  <Item>
+    <ID>WoodForge</ID> <!-- changed it's ID -->
+    <Name>WoodForge</Name> <!-- changed it's name -->
+    <Description>Turn wood planks into swords</Description> <!-- changed it's discription -->
+    <AudioEventClick>FURNACE_WORKSHOP</AudioEventClick>
+	<!-- removed some of the tiles, used for defining how this workshop looks in the game (IE: does it have chairs, tables, etc) -->
+    <Tile>
+      <Position>1 -1</Position>
+      <Part>
+        <SpriteID>Bellows</SpriteID>
+        <Orientation>FrontLeft</Orientation>
+        <MaterialIndex>2</MaterialIndex>
+      </Part>
+      <Part>
+        <SpriteID>BellowsNozzle</SpriteID>
+        <Orientation>FrontLeft</Orientation>
+      </Part>
+    </Tile>
+    <Tile>
+      <Position>-1 0</Position>
+      <Part>
+        <SpriteID>Forge</SpriteID>
+        <MaterialIndex>1</MaterialIndex>
+      </Part>
+      <Part>
+        <SpriteID>ForgeTop</SpriteID>
+      </Part>
+    </Tile>
+    <Tile>
+      <Position>-1 1</Position>
+      <Part>
+        <SpriteID>CoalPile</SpriteID>
+      </Part>
+    </Tile>
+    <Bounds>-1 -1 2 2</Bounds>
+    <CraftPosition>1 0</CraftPosition>
+    <ComponentsPosition>0 1</ComponentsPosition>
+    <StockPosition>0 -1</StockPosition>
+    <CraftableItem> <!-- made a new crafting recipe -->
+      <ItemID>StoneSword</ItemID> <!-- it makes a stone sword -->
+      <SkillUsed>Farming</SkillUsed> <!-- it'll use the farming skill -->
+      <AttributeUsed>Focus</AttributeUsed>
+	  <ConversionMaterial>Serpentine</ConversionMaterial> <!-- force product to be made of "Serpentine" -->
+      <Component> <!-- it'll need 2 planks of wood -->
+        <ItemID>Plank</ItemID>
+        <Quantity>2</Quantity>
+      </Component>
+    </CraftableItem>
+    <!-- removed all the other crafting recipes -->
+    <ConstructionID>WoodForge</ConstructionID> <!-- changed it's ID -->
+  </Item>
   <!--Stonecutter-->
   <Item>
     <ID>Stonecutter</ID>
@@ -366,58 +418,6 @@
       </Component>
     </CraftableItem>
     <ConstructionID>Woodcutter</ConstructionID>
-  </Item>
-<!--WoodForge-->
-  <Item>
-    <ID>WoodForge</ID> <!-- changed it's ID -->
-    <Name>WoodForge</Name> <!-- changed it's name -->
-    <Description>Turn wood planks into swords</Description> <!-- changed it's discription -->
-    <AudioEventClick>FURNACE_WORKSHOP</AudioEventClick>
-	<!-- removed some of the tiles, used for defining how this workshop looks in the game (IE: does it have chairs, tables, etc) -->
-    <Tile>
-      <Position>1 -1</Position>
-      <Part>
-        <SpriteID>Bellows</SpriteID>
-        <Orientation>FrontLeft</Orientation>
-        <MaterialIndex>2</MaterialIndex>
-      </Part>
-      <Part>
-        <SpriteID>BellowsNozzle</SpriteID>
-        <Orientation>FrontLeft</Orientation>
-      </Part>
-    </Tile>
-    <Tile>
-      <Position>-1 0</Position>
-      <Part>
-        <SpriteID>Forge</SpriteID>
-        <MaterialIndex>1</MaterialIndex>
-      </Part>
-      <Part>
-        <SpriteID>ForgeTop</SpriteID>
-      </Part>
-    </Tile>
-    <Tile>
-      <Position>-1 1</Position>
-      <Part>
-        <SpriteID>CoalPile</SpriteID>
-      </Part>
-    </Tile>
-    <Bounds>-1 -1 2 2</Bounds>
-    <CraftPosition>1 0</CraftPosition>
-    <ComponentsPosition>0 1</ComponentsPosition>
-    <StockPosition>0 -1</StockPosition>
-    <CraftableItem> <!-- made a new crafting recipe -->
-      <ItemID>StoneSword</ItemID> <!-- it makes a stone sword -->
-      <SkillUsed>Farming</SkillUsed> <!-- it'll use the farming skill -->
-      <AttributeUsed>Focus</AttributeUsed>
-	  <ConversionMaterial>Serpentine</ConversionMaterial> <!-- force product to be made of "Serpentine" -->
-      <Component> <!-- it'll need 2 planks of wood -->
-        <ItemID>Plank</ItemID>
-        <Quantity>2</Quantity>
-      </Component>
-    </CraftableItem>
-    <!-- removed all the other crafting recipes -->
-    <ConstructionID>WoodForge</ConstructionID> <!-- changed it's ID -->
   </Item>
   <!--Forge-->
   <Item>

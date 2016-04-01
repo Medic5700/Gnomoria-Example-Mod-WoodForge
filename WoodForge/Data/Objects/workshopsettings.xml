@@ -24,6 +24,10 @@
               Weight: Weight that this material is randomly chosen
   -->
   <ConstructionIDToWorkshopID>
+  	  <Item> <!-- WoodForge -->
+		<Key>WoodForge</Key>
+		<Value>WoodForge</Value>
+	  </Item>
 	  <Item>
 		<Key>Stonecutter</Key>
 		<Value>Stonecutter</Value>
@@ -35,10 +39,6 @@
 	  <Item>
 		<Key>Forge</Key>
 		<Value>Forge</Value>
-	  </Item>
-	  <Item> <!-- WoodForge -->
-		<Key>WoodForge</Key>
-		<Value>WoodForge</Value>
 	  </Item>
 	  <Item>
 		<Key>Gemcutter</Key>
